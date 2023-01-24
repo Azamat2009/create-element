@@ -1,5 +1,7 @@
 let main = document.querySelector('main');
 
+
+for (let i = 0; i < 7; i++) {
 // create // a
 let productCard = document.createElement('div');
 let topi = document.createElement('div');
@@ -73,19 +75,22 @@ packageContainer.appendChild(packageP);
 
 price.appendChild(packageContainer);
 
-const buttonAdd = document.querySelector('.button');
-let purchased = false;
+let purchased = false
+let buttons = document.querySelectorAll('.button');
 
-buttonAdd.addEventListener('click', function() {
-    if (purchased) {
-        this.innerHTML = 'В избранное';
-        this.style.color = '';
-        this.style.backgroundColor = '';
-        purchased = false;
-    } else {
-        this.innerHTML = 'Добавлено';
-        this.style.backgroundColor = 'blue';
-        this.style.color = 'white';
-        purchased = true;
-    }
-});
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+        if (purchased) {
+            this.innerHTML = 'В избранное';
+            this.style.color = '';
+            this.style.backgroundColor = '';
+            purchased = false;
+        } else {
+            this.innerHTML = 'Добавлено';
+            this.style.backgroundColor = 'blue';
+            this.style.color = 'white';
+            purchased = true;
+        }
+    });
+}
+}
