@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+main {
+    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    padding: 30px 30px;
+    transform: translate(0px ,65px);
+    color: white;
+    height: 60%;
+    background-color: black;
+}
+
+.product-card {
+    height: 480px;
+    width: 394px;
+    border: 1px solid #000000;
+    margin: 50px auto;
+}
+
+.icons {
+    position: relative;
+    top: -40px;
+    left: 20px;
+    height: 20px;
+    transform: translate(0px ,40px);
+    width: 87px;
+}
+
+.first-h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58.8px;
+
+}
+
+.container {
+    transform: translate(-60px , 0px);
+    display: flex;
+}
+
+.product-img {
+    transform: translate(0px ,40px);
+    width: 87px;
+}
+  
+.product-card h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 29.4px;
+}
+  
+.span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.15px;
+    color: #FFFFFF8F;
+}
+  
+.price {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 15px;
+}
+  
+.button2 {
+    position: relative;
+    top: 70px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    margin-left: 10px;
+    margin-top: 75px;
+    background-color: white;
+    color: black;
+    width: 305px;
+    height: 55px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: .5 ease;
+}
+
+.button {
+    margin-top: 35px;
+    background-color: white;
+    color: black;
+    width: 305px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    transition: .5 ease;
+}
+
+.button2:hover {
+    background-color: orange;
+    transition: .5 ease;
+}
+
+.button:hover {
+    background-color: orange;
+    transition: .5 ease;
+}
